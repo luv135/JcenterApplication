@@ -20,3 +20,6 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+//只上传lib1
+tasks.getByPath(":library1:bintrayUpload").enabled = true
+tasks.getByPath(":library2:bintrayUpload").enabled = false

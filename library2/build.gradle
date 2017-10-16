@@ -30,10 +30,12 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+
+
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "2.3.2"                                                              // #CONFIG# // project version
+version = "1.0.0"                                                              // #CONFIG# // project version
 
 
 // 根节点添加
@@ -103,7 +105,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "library1"                // project name in jcenter
+        name = "library2"                // project name in jcenter
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
